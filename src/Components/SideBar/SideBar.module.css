@@ -1,0 +1,52 @@
+.sidebar{
+    width: 400px;
+    height: 700px;
+    background-color: rgb(17, 17, 17);
+};
+
+.time {
+
+ }
+
+.lines {
+    background-color: rgb(151, 148, 148);
+}
+
+.iconButton {
+
+ border: none;
+ background-color: transparent;
+ font-size: 20px;
+ margin-top: 40px;
+ margin-left: 5px;
+}
+
+.text {
+    font-size: xx-large;
+}
+.cartBadge{
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 270px;
+    padding: 10px;
+    margin-bottom: 5px;
+   
+
+}
+
+.clock{
+    background-color: rgb(97, 94, 94);
+    height: 100px;
+    color: black;
+    width: 220px;
+    border-radius: 20px;
+    margin-left: 60px;
+}
+.exit{
+    display: flex;
+    border: none;
+    font-size: x-small;
+    background-color: brown;
+    margin-left: 170px;
+    margin-top: 30px;
+}

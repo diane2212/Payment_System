@@ -1,0 +1,79 @@
+/* Contenedor principal de CategoryContainer */
+.categoryContainer {
+  flex: 1;                     /* Ocupa todo el espacio restante al lado de la sidebar */
+ 
+  display: flex;
+  justify-content: center;      /* Centra horizontalmente los botones */
+  align-items: flex-start;      /* Alinea al inicio verticalmente */
+  height: 100%;                 /* Para que ocupe toda la altura disponible */
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+
+
+/* Botón de categoría */
+.grid {
+  width: 170px;                 /* Ancho fijo */
+  height: 700px;                /* Alto grande para aspecto vertical */
+  background-color: #222121;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  transition: transform 0.2s, background-color 0.2s;
+
+}
+
+.grid:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+/* Contenedor de productos */
+.products {
+  display: flex;
+  flex-direction: row;       /* Botones verticales */
+  gap: 0.5rem;
+  margin-right: 350px;
+}
+
+/* Botón de volver */
+.backBtn {
+  position: fixed;
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+/* Botón de producto */
+.productBtn {
+  width: 150px;
+  height: 80px;
+  background-color: #4b4646;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  padding-top: 25px;
+  margin-top: 60px;
+  
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.productBtn:hover {
+  transform: scale(1.05);
+  background-color: #666;
+}
+
+.categoryImg {
+  width: 100%;        /* ocupa todo el botón horizontal */
+  height: 100%;       /* ocupa todo el botón vertical */
+  object-fit:cover;  /* recorta/ajusta la imagen sin deformarla */
+  padding: 0;
+}
