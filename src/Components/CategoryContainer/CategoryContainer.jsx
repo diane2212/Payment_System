@@ -21,12 +21,12 @@ const categories = [
   {
     name: "hielo/vasos",
     img: "https://i.pinimg.com/1200x/3e/2c/b8/3e2cb8785c80748cfba06eac1acfc632.jpg",
-    products: ["Red Bull", "Speed", "Monster"]
+    products: [ "Hielo", "Eco Vasos"]
   },
   {
     name: "otros",
     img: "https://i.pinimg.com/736x/f5/07/20/f50720815b0e689ee60d817ac4fe3c50.jpg",
-    products: ["Red Bull", "Speed", "Monster"]
+    products: ["Consumicion"]
   },
 ];
 
@@ -45,7 +45,12 @@ function CategoryContainer({ onAddToCart }) {
         onClick={() => setActiveCategory(category)}
         className={styles.grid}
       >
+       
         <img src={category.img} className={styles.categoryImg} />
+        <div className={styles.content}>
+           <h1 className={styles.title}>{category.name}</h1>
+
+        </div>
         
       </button>
         </div>
