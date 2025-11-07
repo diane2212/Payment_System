@@ -4,12 +4,12 @@ import { useState } from "react";
 
 const categories = [
   {
-    name: "con alcohol",
+    name: "Con Alcohol",
     img: "https://i.pinimg.com/1200x/51/eb/08/51eb08cca0f061a8e0b282bf71fdecf4.jpg",
     products: ["Gin Tonic", "Campari", "Fernet"]
   },
   {
-    name: "sin alcohol",
+    name: "Sin Alcohol",
     img: "https://i.pinimg.com/736x/b6/6c/89/b66c89e226462439c41a202823d005ee.jpg",
     products: ["Limonada", "Coca Cola", "Sprite"]
   },
@@ -19,12 +19,12 @@ const categories = [
     products: ["Levité", "Glaciar", "Villavicencio"]
   },
   {
-    name: "hielo/vasos",
+    name: "Hielo",
     img: "https://i.pinimg.com/1200x/3e/2c/b8/3e2cb8785c80748cfba06eac1acfc632.jpg",
     products: [ "Hielo", "Eco Vasos"]
   },
   {
-    name: "otros",
+    name: "EcoVasos",
     img: "https://i.pinimg.com/736x/f5/07/20/f50720815b0e689ee60d817ac4fe3c50.jpg",
     products: ["Consumicion"]
   },
@@ -48,7 +48,7 @@ function CategoryContainer({ onAddToCart }) {
        
         <img src={category.img} className={styles.categoryImg} />
         <div className={styles.content}>
-           <h1 className={styles.title}>{category.name}</h1>
+           <h1>{category.name}</h1>
 
         </div>
         

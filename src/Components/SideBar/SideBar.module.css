@@ -1,18 +1,22 @@
 .sidebar{
     width: 400px;
     height: 700px;
-    background-color: rgb(17, 17, 17);
+    background: linear-gradient(rgb(0, 0, 0),rgb(59, 35, 13))
 };
 
-.time {
-
- }
-
-.lines {
-    background-color: rgb(151, 148, 148);
+.user {
+    size: 10px;
+    color: white;
 }
 
-.iconButton {
+
+.userbutton {
+ border: none;
+ background-color: transparent;
+ font-size: 20px;
+ margin-left: 150px;
+}
+.typeButton {
 
  border: none;
  background-color: transparent;
@@ -21,8 +25,9 @@
  margin-left: 5px;
 }
 
-.text {
+.MsjHello {
     font-size: xx-large;
+    margin-top: 30px;
 }
 .cartBadge{
     background-color: transparent;
@@ -30,23 +35,27 @@
     margin-left: 270px;
     padding: 10px;
     margin-bottom: 5px;
+    display: flex;
    
 
 }
 
-.clock{
-    background-color: rgb(97, 94, 94);
-    height: 100px;
-    color: black;
-    width: 220px;
-    border-radius: 20px;
-    margin-left: 60px;
+
+.ExitIcon {
+    size: 20px;
+    color: white;
+   margin-left: 200px ;
 }
-.exit{
-    display: flex;
-    border: none;
-    font-size: x-small;
-    background-color: brown;
-    margin-left: 170px;
-    margin-top: 30px;
+
+.SectionsName{
+
+    margin-left: 5px;
+    font-size: medium;
+    color: rgb(133, 131, 131);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.LogoLucide {
+    margin-left: 5px;
+    color:  rgb(133, 131, 131);
+    size: 20px;
+ }

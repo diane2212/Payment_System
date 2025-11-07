@@ -1,28 +1,34 @@
 import styles from "./SideBar.module.css"
+import Clock from "./Clock";
+import { LogOut, UserCog, CalendarSearch , Wine} from "lucide-react";
+
 
 
 function SideBar({ cartCount }) {
   return (
     <aside className={styles.sidebar}>
-      <p className={styles.text}>Hola, Usuario! </p>
-      
-      <button className={styles.iconButton}>Mi Perfil</button>
-      <hr className={styles.lines}/>
-      <button className={styles.iconButton}>Mis Ventas</button>
-      <hr className={styles.lines}/>
 
-      <button className={styles.iconButton} aria-label="Carrito">
-        Carrito
+      <div className={styles.MsjHello}>Hola, Usuario!
+        <button className={styles.userbutton}>
+          <UserCog className={styles.user} />
+        </button>
+      </div>
+      <div>
+        <CalendarSearch className={styles.LogoLucide}/>
+        <button className={styles.typeButton}>
+          <h2 className={styles.SectionsName}>Registro de Ventas</h2>
+        </button>
+      </div>
+        <Wine className={styles.LogoLucide} />
+      <button className={styles.typeButton}>
+        <h2 className={styles.SectionsName}>Carrito</h2>
         <span className={styles.cartBadge}>{cartCount}</span>
      </button>
-     <hr/>
 
-        <div>
-
-         <p className={styles.clock}>{new Date().toLocaleString()}</p>
-        </div>
-      
-        <button className={styles.exit}>Cerrar Sesion</button>
+      <Clock/>
+      <button className={styles.typeButton} label="Exit">
+       <LogOut className={styles.ExitIcon}/>
+      </button>
     </aside>
   );
   }
