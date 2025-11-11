@@ -1,24 +1,22 @@
-import { useState } from "react";
-import styles from "./Clock.module.css"
+import { useState, useEffect } from "react";
+import styles from "./Clock.module.css";
 
 const Clock = () => {
-    let time = new Date().toLocaleString();
-    const [CurrentTime, SetCurrentTime] = useState(time);
+  const [currentTime, setCurrentTime] = useState(new Date().toLocaleString());
 
-    const updateDate = () => {
-        let time = new Date().toLocaleString();
-        SetCurrentTime(time); 
-   }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date().toLocaleString());
+    }, 1000);
 
-   setInterval(updateDate, 1000);
+    return () => clearInterval(interval); 
+  }, []);
 
-   return (
-
-   <div className={styles.clock}>
-     <h1 className={styles.hour}>{CurrentTime}</h1>
-   </div>
-   )
-
-}
+  return (
+    <div className={styles.clock}>
+      <h1>{currentTime}</h1>
+    </div>
+  );
+};
 
 export default Clock;

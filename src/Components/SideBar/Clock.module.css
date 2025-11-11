@@ -1,20 +1,14 @@
 .clock {
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    margin-left: 70px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .clock h1 {
-    border: 2px solid rgb(28, 29, 26);
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: rgb(39, 39, 36) 0px 5px 15px;
+  white-space: nowrap;
+   padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  width: auto;
+  color: rgb(122, 122, 122);
 }
 
-.hour {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(65, 64, 64);
-    font-size:larger;
-}

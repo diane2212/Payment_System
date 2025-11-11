@@ -1,4 +1,7 @@
-.div{
-    display: flex;              /* Coloca los hijos uno al lado del otro */
-   
+.div {
+  display: flex;
+  flex-wrap: nowrap; 
+  width: 100%;
+  overflow-x: hidden;
 }
+
