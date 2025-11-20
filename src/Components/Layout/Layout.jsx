@@ -2,7 +2,7 @@ import { Outlet } from 'react-router';
 import Header from '../Header/Header';
 import SideBar from '../SideBar/SideBar';
 import { useState } from 'react';
-import styles from ".\Layout.module.css"
+import styles from "./Layout.module.css"
 
 function Layout() {
     const [cartCount, setCartCount] = useState(0);
