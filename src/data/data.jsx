@@ -1,4 +1,4 @@
-export const categories = [
+/* export const categories = [
   {
     name: "Con Alcohol",
     img: "https://i.pinimg.com/1200x/51/eb/08/51eb08cca0f061a8e0b282bf71fdecf4.jpg",
@@ -27,4 +27,5 @@ export const categories = [
     img: "https://i.pinimg.com/736x/f5/07/20/f50720815b0e689ee60d817ac4fe3c50.jpg",
     products: ["Consumicion"]
   },
-];
+]; 
+*/

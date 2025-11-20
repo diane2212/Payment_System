@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import Header from "../Components/Header/Header";
 import CategoryContainer from "../Components/CategoryContainer/CategoryContainer";
 import styles from "./App.module.css"
@@ -25,3 +25,4 @@ function App() {
  
 }
 export default App;
+*/
