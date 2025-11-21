@@ -6,6 +6,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Layout from "./Components/Layout/Layout.jsx";
 import CategoryContainer from "./Components/CategoryContainer/CategoryContainer.jsx";
+import ProductDetail from "./Pages/ProductDetail.tsx";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,8 @@ createRoot(document.getElementById("root")).render(
                   </Suspense>
                 }
               />
+              
+              <Route path="/products/:id" element={<ProductDetail />} />
             </Route>
           </Routes>
         </BrowserRouter>
